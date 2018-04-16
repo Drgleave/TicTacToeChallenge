@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tic_tac_toechallenge.OnePlayerSelectBoard">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#6277F7">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:padding="10dp"
+            android:text="Single Player"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/playerSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/select_x"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:button="@drawable/radiobutton_x"
+                android:padding="10dp"
+                 />
+
+            <RadioButton
+                android:id="@+id/select_o"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp"
+                android:button="@drawable/radiobutton_o"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="33dp"
+            android:hint="Enter name"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+
+        <RadioButton
+            android:id="@+id/size3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="33dp"
+            android:text="Board Size 3"
+            android:textColor="#6277F7"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/size5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="19dp"
+            android:text="Board Size 5"
+            android:textColor="#6277F7"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundedbuttons"
+        android:padding="10dp"
+        android:text="Begin Game"
+        android:textColor="#ffffff"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

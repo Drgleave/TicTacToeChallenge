@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tic_tac_toechallenge.TwoPlayerSelectBoard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#6277F7"
+        android:id="@+id/relativeLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/textView"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/x_image"
+            android:id="@+id/imageView2"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:hint="Enter name"
+            android:textColor="#ffffff"
+            android:text="Player 1"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:padding="10dp"
+            android:id="@+id/player1"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="Player 2"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/o_image"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/player2"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:hint="Enter name"
+            android:textColor="#ffffff"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:text="Player 2"
+            android:padding="10dp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="33dp"
+            android:text="Board Size 3"
+            android:textSize="18sp"
+            android:textColor="#6277F7"
+            android:id="@+id/radio3"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:textSize="18sp"
+            android:text="Board Size 5"
+            android:textColor="#6277F7"
+            android:id="@+id/radio5"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/roundedbuttons"
+        android:padding="10dp"
+        android:text="Begin Game"
+        android:textColor="#ffffff"
+        android:id="@+id/begin_game"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
+

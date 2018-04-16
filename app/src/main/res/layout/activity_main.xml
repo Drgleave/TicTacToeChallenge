@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tic_tac_toechallenge.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:background="#6277F7"
+        android:src="@drawable/alc"
+        android:id="@+id/imageView"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:textColor="#ffffff"
+        android:background="#6277F7"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Tic-Tac-Toe Challenge"
+        android:id="@+id/name"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/pvp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pvc"
+        android:layout_alignStart="@+id/pvc"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedbuttons"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Player vs Player"
+        android:textColor="#ffffff"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/pvc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="130dp"
+        android:layout_below="@id/pvp"
+        android:background="@drawable/roundedbuttons"
+        android:padding="10dp"
+        android:text="Player vs Computer"
+        android:textColor="#ffffff"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

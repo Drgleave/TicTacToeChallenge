@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tic_tac_toechallenge.Main3SinglePlayerActivity">
+
+    <TableLayout
+        android:id="@+id/glGameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/buttonReset"
+        android:layout_marginBottom="30dp"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:padding="8dp"
+        >
+
+        <!--Row 1-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/one"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:background="@color/gameButton"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                style="@style/Widget.AppCompat.Button"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!--TextView to show user turns and winner-->
+    <TextView
+        android:id="@+id/dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pName"
+        android:padding="8dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/imageView3"
+        android:contentDescription="TODO"
+        android:layout_marginStart="40dp" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/ai"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/imageView4"
+        android:contentDescription="TODO" />
+
+
+    <!--TextView to show user name-->
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Player   "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <!--TextView to show user score-->
+    <TextView
+        android:id="@+id/pScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pName"
+        android:layout_alignBottom="@+id/pName"
+        android:layout_alignEnd="@+id/glGameBoard"
+        android:layout_alignRight="@+id/glGameBoard"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:padding="8dp"
+        android:text="0"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <!--TextView to show computer name-->
+    <TextView
+        android:id="@+id/cName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:text="Computer   "
+        tools:ignore="HardcodedText" />
+    <!--TextView to show computer score-->
+    <TextView
+        android:id="@+id/cScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cName"
+        android:layout_alignBottom="@+id/cName"
+        android:layout_alignLeft="@+id/pScore"
+        android:layout_alignStart="@+id/pScore"
+        android:padding="8dp"
+        android:text="0"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+
+    <!--Button to reset game board-->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:background="@drawable/roundedbuttons"
+        android:onClick="resetBoard"
+        android:padding="8dp"
+        android:text="RESET"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <!--Button to reduce game board-->
+    <Button
+        android:id="@+id/inc5x5Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/glGameBoard"
+        android:layout_alignRight="@+id/glGameBoard"
+        android:layout_below="@+id/glGameBoard"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/roundedbuttons"
+        android:onClick="IncreaseBoard"
+        android:padding="8dp"
+        android:text="5 x 5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
